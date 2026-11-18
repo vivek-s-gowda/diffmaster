@@ -7,15 +7,18 @@ import { DiffEngine } from './diffEngine.js';
 import { JsonDiffer } from './jsonDiff.js';
 import { ThreeWayMerger } from './threeWayMerge.js';
 
-import { Header } from './components/Header.js';
-import { DiffControls } from './components/DiffControls.js';
-import { SideBySideDiff } from './components/SideBySideDiff.js';
-import { UnifiedDiff } from './components/UnifiedDiff.js';
-import { JsonSemanticDiff } from './components/JsonSemanticDiff.js';
-import { ThreeWayMerge } from './components/ThreeWayMerge.js';
-import { Toast } from './components/Toast.js';
+import { Header } from './components/Header.jsx';
+import { DiffControls } from './components/DiffControls.jsx';
+import { SideBySideDiff } from './components/SideBySideDiff.jsx';
+import { UnifiedDiff } from './components/UnifiedDiff.jsx';
+import { JsonSemanticDiff } from './components/JsonSemanticDiff.jsx';
+import { ThreeWayMerge } from './components/ThreeWayMerge.jsx';
+import { Toast } from './components/Toast.jsx';
 
-const { useState, useEffect, useMemo, useCallback } = window.React;
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import ReactDOM from 'react-dom/client';
+window.React = React;
+window.ReactDOM = ReactDOM;
 
 export function App() {
   const [activeTheme, setActiveTheme] = useState('nordic');

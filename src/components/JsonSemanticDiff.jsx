@@ -1,7 +1,6 @@
 // day-06-diffmaster/src/components/JsonSemanticDiff.jsx
+import { useState } from 'react';
 import { JsonDiffer } from '../jsonDiff.js';
-
-const { useState } = window.React;
 
 export function JsonSemanticDiff({
   json1,
