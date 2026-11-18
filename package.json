@@ -1,0 +1,14 @@
+{
+  "name": "day-06-diffmaster",
+  "version": "1.0.0",
+  "description": "Visual Diff & Merge Studio with Semantic JSON Diffs, 3-Way Merge & Git Patch Exporter",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 3006",
+    "deploy": "npm run build && firebase deploy --only hosting"
+  },
+  "author": "sgowdavivek <sgowdavivek@gmail.com>",
+  "license": "MIT"
+}
